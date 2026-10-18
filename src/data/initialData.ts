@@ -1,0 +1,312 @@
+import { CompanySettings, Category, Project } from "../types";
+
+export const INITIAL_SETTINGS: CompanySettings = {
+  "companyName": "Tradita Dekor",
+  "tagline": "Terasa, Veranda dhe Konstruksione Metali në Kosovë",
+  "phone": "+383 43 952 854",
+  "whatsapp": "+383 43 952 854",
+  "email": "tradita.dekor05@gmail.com",
+  "address": "Carralevë, 7200",
+  "city": "Shtime",
+  "country": "Kosovë",
+  "workingHours": "E Hënë - E Shtunë: 08:00 - 18:00",
+  "experienceYears": 15,
+  "aboutTitle": "Traditë, Përkushtim dhe Saktësi në Çdo Konstruksion",
+  "aboutText": "Tradita Dekor është kompani e specializuar në Kosovë për projektimin, prodhimin dhe montimin e terasave, verandave, garazhave, konstruksioneve metalike dhe bunareve dekorative. Me vite përvojë dhe përkushtim maksimal ndaj cilësisë, ne sjellim zgjidhje të qëndrueshme, estetike dhe të përshtatura për çdo shtëpi apo objekt biznesi.",
+  "aboutPillars": [
+    {
+      "title": "Materiale Cilësore",
+      "desc": "Përdorim profile metalike të certifikuara dhe veshje antikorrozive afatgjata."
+    },
+    {
+      "title": "Përpunim me Saktësi",
+      "desc": "Punime precize me mjeshtëri dhe vëmendje maksimale ndaj çdo detaji."
+    },
+    {
+      "title": "Garanci dhe Montim",
+      "desc": "Montim i sigurt nga ekipi ynë profesional në tërë territorin e Kosovës."
+    },
+    {
+      "title": "Zgjidhje sipas Kërkesës",
+      "desc": "Projekte të personalizuara që i përgjigjen kërkesave dhe stilit të klientit."
+    }
+  ],
+  "logoUrl": "/uploads/1792309345527-5ac4f491-0-02-05-5a0b7365824d0aa02d5d14a56bce2e85282b2651b90d6c070f2047c533189c25_82960e412c81392a.webp",
+  "heroCoverUrl": "/uploads/1792309387659-6926ad10-0-02-05-2102ea891843c8ec7e781d7a4fa0f3140594679bd5fc8a8ae6a0d374fbfa3ac0_4b16e0573364c341.webp",
+  "heroHeadline": "Terasa, Veranda dhe Konstruksione Metali me Standarde të Larta",
+  "heroSubheadline": "Zgjidhje moderne dhe afatgjata për hapësirën tuaj në Kosovë. Punojmë me mjeshtëri, hekur cilësor dhe dizajne të sofistikuara.",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/profile.php?id=61595550954998",
+    "instagram": "https://www.instagram.com/tradita.dekor05/?hl=en",
+    "tiktok": "https://www.tiktok.com/@tradita.dekor",
+    "viber": "+38343952854"
+  },
+  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47158.33036412192!2d20.892015!3d42.433611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547f893e36e78d%3A0xc6cb5266ffda7334!2zQ2FycmFsZXbDqywgU2h0aW1l!5e0!3m2!1ssq!2s!4v1710000000000!5m2!1ssq!2s"
+};
+
+export const INITIAL_CATEGORIES: Category[] = [
+  {
+    "id": "cat-terasa",
+    "slug": "terasa",
+    "name": "Terasa",
+    "description": "Mbulesa terasash me konstruksion metalik të galvanizuar, panele xhami, sanduiç dhe polikarbonat për mbrojtje nga dielli dhe reshjet.",
+    "badge": "Popullore",
+    "order": 1
+  },
+  {
+    "id": "cat-veranda",
+    "slug": "veranda",
+    "name": "Veranda",
+    "description": "Veranda moderne me profil hekuri dhe xhama lëvizës, duke krijuar një ambient të ngrohtë dhe të ndritshëm për të gjitha stinët.",
+    "badge": "Elegante",
+    "order": 2
+  },
+  {
+    "id": "cat-garazha",
+    "slug": "garazha",
+    "name": "Garazha",
+    "description": "Konstruksione të forta garazhash metalike për një ose më shumë automjete, me mbulesa të izoluara dhe dizajne bashkëkohore.",
+    "badge": "Rezistente",
+    "order": 3
+  },
+  {
+    "id": "cat-konstruksione-metali",
+    "slug": "konstruksione-metali",
+    "name": "Konstruksione Metali",
+    "description": "Dyer oborri, rrethoja dekorative, shkallë metalike, mbulesa industriale dhe profile hekuri të punuara me saktësi.",
+    "badge": "Mjeshtëri",
+    "order": 4
+  },
+  {
+    "id": "cat-bunare",
+    "slug": "bunare",
+    "name": "Bunare",
+    "description": "Mbulesa dhe kapake dekorativë mbrojtës për bunare, të realizuara me hekur të farkëtuar me rezistencë maksimale.",
+    "badge": "Dekor & Siguri",
+    "order": 5
+  }
+];
+
+export const INITIAL_PROJECTS: Project[] = [
+  {
+    "id": "proj-1792309311783-yp8i1",
+    "title": "Bunar Dekorativ prej Druri me Çati Moderne",
+    "categorySlug": "bunare",
+    "description": "Punim dekorativ i bunarit me konstruksion të fortë prej druri dhe çati elegante me mbulesë të errët. Dizajni kombinon stilin tradicional me pamjen moderne, duke i dhënë oborrit një pamje të veçantë dhe estetike. Punim i realizuar me kujdes ndaj detajeve dhe përfundim cilësor. Tradita Dekor ofron zgjidhje dekorative dhe konstruksione sipas kërkesave të klientëve.",
+    "location": "Shtime",
+    "completionDate": "2026",
+    "status": "E Përfunduar",
+    "published": true,
+    "order": 4,
+    "mainImage": {
+      "id": "img-1792309293493-1c2d1b",
+      "url": "/uploads/1792309293492-349515f5-0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+      "title": "0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+      "altText": "0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+      "uploadedAt": "2026-10-18T07:41:33.493Z"
+    },
+    "galleryImages": [
+      {
+        "id": "img-1792309293493-1c2d1b",
+        "url": "/uploads/1792309293492-349515f5-0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+        "title": "0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+        "altText": "0-02-05-29e55c27d54ea2dced7744a6f1b878200ac588569daee7bf2bdb23091a567a81_2df50c6f6fb997dc.webp",
+        "uploadedAt": "2026-10-18T07:41:33.493Z"
+      },
+      {
+        "id": "img-1792309294027-ff960f",
+        "url": "/uploads/1792309294027-de12fb61-0-02-05-b56986e2d7fdc441858969031875bedf9cb5055d92aa1ec2370d72c8816c6497_4932a091c64662c5.webp",
+        "title": "0-02-05-b56986e2d7fdc441858969031875bedf9cb5055d92aa1ec2370d72c8816c6497_4932a091c64662c5.webp",
+        "altText": "0-02-05-b56986e2d7fdc441858969031875bedf9cb5055d92aa1ec2370d72c8816c6497_4932a091c64662c5.webp",
+        "uploadedAt": "2026-10-18T07:41:34.027Z"
+      },
+      {
+        "id": "img-1792309294624-91dfac",
+        "url": "/uploads/1792309294624-78907103-0-02-05-c3fef5d5e9ff865b44996592824bff8dba67f9f4aafdbfafc6e73a810e433f7b_49e7e6aebae45c64.webp",
+        "title": "0-02-05-c3fef5d5e9ff865b44996592824bff8dba67f9f4aafdbfafc6e73a810e433f7b_49e7e6aebae45c64.webp",
+        "altText": "0-02-05-c3fef5d5e9ff865b44996592824bff8dba67f9f4aafdbfafc6e73a810e433f7b_49e7e6aebae45c64.webp",
+        "uploadedAt": "2026-10-18T07:41:34.624Z"
+      }
+    ],
+    "createdAt": "2026-10-18T07:41:51.783Z",
+    "updatedAt": "2026-10-18T07:45:14.809Z"
+  },
+  {
+    "id": "proj-1792308047367-y2vao",
+    "title": "Garazhë Moderne me Konstruksion Metali dhe Elemente Druri",
+    "categorySlug": "garazha",
+    "description": "Garazhë moderne me konstruksion të qëndrueshëm, mbulesë cilësore dhe kombinim elegant të metalit me elemente druri. Dizajni bashkëkohor ofron siguri, funksionalitet dhe pamje estetike. Tradita Dekor realizon punime sipas kërkesave të klientit, me kujdes të veçantë ndaj cilësisë së materialeve dhe përfundimit të detajeve.",
+    "location": "Shtime,Kosov",
+    "completionDate": "2026",
+    "status": "E Përfunduar",
+    "published": true,
+    "order": 3,
+    "mainImage": {
+      "id": "img-1792308009549-a3e5b2",
+      "url": "/uploads/1792308009549-b9c624dd-viber_image_2026-10-18_09-19-43-780.webp",
+      "title": "viber_image_2026-10-18_09-19-43-780.webp",
+      "altText": "viber_image_2026-10-18_09-19-43-780.webp",
+      "uploadedAt": "2026-10-18T07:20:09.549Z"
+    },
+    "galleryImages": [
+      {
+        "id": "img-1792308009549-a3e5b2",
+        "url": "/uploads/1792308009549-b9c624dd-viber_image_2026-10-18_09-19-43-780.webp",
+        "title": "viber_image_2026-10-18_09-19-43-780.webp",
+        "altText": "viber_image_2026-10-18_09-19-43-780.webp",
+        "uploadedAt": "2026-10-18T07:20:09.549Z"
+      },
+      {
+        "id": "img-1792308010129-a7a24e",
+        "url": "/uploads/1792308010128-2fe8577b-viber_image_2026-10-18_09-19-44-095.webp",
+        "title": "viber_image_2026-10-18_09-19-44-095.webp",
+        "altText": "viber_image_2026-10-18_09-19-44-095.webp",
+        "uploadedAt": "2026-10-18T07:20:10.129Z"
+      },
+      {
+        "id": "img-1792308025919-21ce5f",
+        "url": "/uploads/1792308025918-7e1eacfe-viber_image_2026-10-16_22-18-19-755.webp",
+        "title": "viber_image_2026-10-16_22-18-19-755.webp",
+        "altText": "viber_image_2026-10-16_22-18-19-755.webp",
+        "uploadedAt": "2026-10-18T07:20:25.919Z"
+      }
+    ],
+    "createdAt": "2026-10-18T07:20:47.367Z",
+    "updatedAt": "2026-10-18T07:20:47.367Z"
+  },
+  {
+    "id": "proj-1792307720645-t0tua",
+    "title": "Verandë Moderne me Konstruksion Metalik dhe Ndriçim LED në Shtime",
+    "categorySlug": "veranda",
+    "description": "Verandë moderne me konstruksion metalik të qëndrueshëm, e kombinuar me elemente dekorative në ngjyrë druri dhe ndriçim LED për një pamje elegante. Mbulimi cilësor, shtyllat e forta dhe dizajni bashkëkohor krijojnë një hapësirë të rehatshme për pushim dhe relaksim. Punimi është realizuar me kujdes ndaj detajeve, duke ndërthurur estetikën, funksionalitetin dhe qëndrueshmërinë.",
+    "location": "Shtime",
+    "completionDate": "2026",
+    "status": "E Përfunduar",
+    "published": true,
+    "order": 2,
+    "mainImage": {
+      "id": "img-1792309494802-a4f263",
+      "url": "/uploads/1792309494802-6035f3fa-0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+      "title": "0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+      "altText": "0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+      "uploadedAt": "2026-10-18T07:44:54.802Z"
+    },
+    "galleryImages": [
+      {
+        "id": "img-1792307690190-65dc15",
+        "url": "/uploads/1792307690189-a71c5e3d-0-02-05-420a8ec1f5bc777cecf5c0d7627be6f2a0a87097a95a9bc4ff6505f23de8f6b6_4ea67745d5032bd1.webp",
+        "title": "0-02-05-420a8ec1f5bc777cecf5c0d7627be6f2a0a87097a95a9bc4ff6505f23de8f6b6_4ea67745d5032bd1.webp",
+        "altText": "0-02-05-420a8ec1f5bc777cecf5c0d7627be6f2a0a87097a95a9bc4ff6505f23de8f6b6_4ea67745d5032bd1.webp",
+        "uploadedAt": "2026-10-18T07:14:50.190Z"
+      },
+      {
+        "id": "img-1792307690869-cb0f16",
+        "url": "/uploads/1792307690869-5cdd97da-0-02-05-2102ea891843c8ec7e781d7a4fa0f3140594679bd5fc8a8ae6a0d374fbfa3ac0_4b16e0573364c341.webp",
+        "title": "0-02-05-2102ea891843c8ec7e781d7a4fa0f3140594679bd5fc8a8ae6a0d374fbfa3ac0_4b16e0573364c341.webp",
+        "altText": "0-02-05-2102ea891843c8ec7e781d7a4fa0f3140594679bd5fc8a8ae6a0d374fbfa3ac0_4b16e0573364c341.webp",
+        "uploadedAt": "2026-10-18T07:14:50.869Z"
+      },
+      {
+        "id": "img-1792307691562-a8b505",
+        "url": "/uploads/1792307691561-33aac322-viber_image_2026-10-13_10-59-21-818.webp",
+        "title": "viber_image_2026-10-13_10-59-21-818.webp",
+        "altText": "viber_image_2026-10-13_10-59-21-818.webp",
+        "uploadedAt": "2026-10-18T07:14:51.562Z"
+      },
+      {
+        "id": "img-1792307692204-097922",
+        "url": "/uploads/1792307692204-03d539b9-viber_image_2026-10-13_10-59-23-291.webp",
+        "title": "viber_image_2026-10-13_10-59-23-291.webp",
+        "altText": "viber_image_2026-10-13_10-59-23-291.webp",
+        "uploadedAt": "2026-10-18T07:14:52.204Z"
+      },
+      {
+        "id": "img-1792307692696-ce2b76",
+        "url": "/uploads/1792307692696-1268a42d-viber_image_2026-10-13_10-59-23-839.webp",
+        "title": "viber_image_2026-10-13_10-59-23-839.webp",
+        "altText": "viber_image_2026-10-13_10-59-23-839.webp",
+        "uploadedAt": "2026-10-18T07:14:52.696Z"
+      },
+      {
+        "id": "img-1792307693269-03474d",
+        "url": "/uploads/1792307693269-a868a9fa-viber_image_2026-10-16_23-23-14-014.webp",
+        "title": "viber_image_2026-10-16_23-23-14-014.webp",
+        "altText": "viber_image_2026-10-16_23-23-14-014.webp",
+        "uploadedAt": "2026-10-18T07:14:53.269Z"
+      },
+      {
+        "id": "img-1792309494802-a4f263",
+        "url": "/uploads/1792309494802-6035f3fa-0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+        "title": "0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+        "altText": "0-02-05-36cbf0d48ca8eaed57776ab3a8633c7bd08191e5cfe3db87be9f3f6ffbe98072_5625f989f34ddd97.webp",
+        "uploadedAt": "2026-10-18T07:44:54.802Z"
+      }
+    ],
+    "createdAt": "2026-10-18T07:15:20.645Z",
+    "updatedAt": "2026-10-18T07:45:03.851Z"
+  },
+  {
+    "id": "proj-1792307449065-mcm2i",
+    "title": "Terasë Moderne me Konstruksion Metalik",
+    "categorySlug": "terasa",
+    "description": "Terasë moderne me konstruksion metalik, e projektuar për të ofruar qëndrueshmëri, siguri dhe elegancë. Struktura përmban shtylla metalike të forta, mbulim cilësor dhe përfundim modern që përshtatet bukur me arkitekturën e shtëpisë. Punimi kombinon materialet cilësore me dizajnin funksional, duke krijuar një hapësirë të rehatshme dhe të mbrojtur për çdo stinë.",
+    "location": "Shtime,",
+    "completionDate": "2026",
+    "status": "E Përfunduar",
+    "published": true,
+    "order": 1,
+    "mainImage": {
+      "id": "img-1792307378712-dbbc08",
+      "url": "/uploads/1792307378712-5daea50b-viber_image_2026-10-13_10-59-09-179.webp",
+      "title": "viber_image_2026-10-13_10-59-09-179.webp",
+      "altText": "viber_image_2026-10-13_10-59-09-179.webp",
+      "uploadedAt": "2026-10-18T07:09:38.712Z"
+    },
+    "galleryImages": [
+      {
+        "id": "img-1792307378712-dbbc08",
+        "url": "/uploads/1792307378712-5daea50b-viber_image_2026-10-13_10-59-09-179.webp",
+        "title": "viber_image_2026-10-13_10-59-09-179.webp",
+        "altText": "viber_image_2026-10-13_10-59-09-179.webp",
+        "uploadedAt": "2026-10-18T07:09:38.712Z"
+      },
+      {
+        "id": "img-1792307393626-272acb",
+        "url": "/uploads/1792307393626-19bf5d93-viber_image_2026-10-13_10-59-11-280.webp",
+        "title": "viber_image_2026-10-13_10-59-11-280.webp",
+        "altText": "viber_image_2026-10-13_10-59-11-280.webp",
+        "uploadedAt": "2026-10-18T07:09:53.626Z"
+      },
+      {
+        "id": "img-1792307412976-37b405",
+        "url": "/uploads/1792307412976-654b3930-viber_image_2026-10-13_10-59-11-642.webp",
+        "title": "viber_image_2026-10-13_10-59-11-642.webp",
+        "altText": "viber_image_2026-10-13_10-59-11-642.webp",
+        "uploadedAt": "2026-10-18T07:10:12.976Z"
+      },
+      {
+        "id": "img-1792307439690-17daea",
+        "url": "/uploads/1792307439690-b66f6f67-viber_image_2026-10-13_10-59-21-573.webp",
+        "title": "viber_image_2026-10-13_10-59-21-573.webp",
+        "altText": "viber_image_2026-10-13_10-59-21-573.webp",
+        "uploadedAt": "2026-10-18T07:10:39.690Z"
+      },
+      {
+        "id": "img-1792307440250-7ea27e",
+        "url": "/uploads/1792307440249-706598d3-viber_image_2026-10-13_10-59-23-022.webp",
+        "title": "viber_image_2026-10-13_10-59-23-022.webp",
+        "altText": "viber_image_2026-10-13_10-59-23-022.webp",
+        "uploadedAt": "2026-10-18T07:10:40.250Z"
+      },
+      {
+        "id": "img-1792307440661-42e081",
+        "url": "/uploads/1792307440660-f029b70a-viber_image_2026-10-13_10-59-28-259.webp",
+        "title": "viber_image_2026-10-13_10-59-28-259.webp",
+        "altText": "viber_image_2026-10-13_10-59-28-259.webp",
+        "uploadedAt": "2026-10-18T07:10:40.661Z"
+      }
+    ],
+    "createdAt": "2026-10-18T07:10:49.065Z",
+    "updatedAt": "2026-10-18T07:10:49.065Z"
+  }
+];
